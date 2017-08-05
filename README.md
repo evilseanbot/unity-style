@@ -36,3 +36,19 @@ Project
         Models
         Scripts
 ```
+
+If assets are used by multiple subjects, (There are terriers but also labs that bark with the same sound and scripts), the ideal is to put shared elements in seperate component folders. (I would stress composition over inheritance: http://gameprogrammingpatterns.com/component.html)
+
+```
+Project
+    Dogs
+        Terrier
+            Models
+            Scripts
+        Lab
+            Models
+            Scripts
+        Barking
+            Sounds
+            Scripts
+```
